@@ -26,10 +26,6 @@
         <item name="android:windowEnterAnimation">@anim/abc_grow_fade_in_from_bottom</item>
         <item name="android:windowExitAnimation">@anim/abc_shrink_fade_out_from_bottom</item>
     </style>
-    <style name="Base.Animation.AppCompat.Tooltip" parent="@android:style/Animation">
-        <item name="android:windowEnterAnimation">@anim/tooltip_enter</item>
-        <item name="android:windowExitAnimation">@anim/tooltip_exit</item>
-    </style>
     <style name="Base.CardView" parent="@android:style/Widget">
         <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
         <item name="cardElevation">@dimen/cardview_default_elevation</item>
@@ -795,11 +791,6 @@
         <item name="switchPadding">@dimen/abc_switch_padding</item>
         <item name="switchTextAppearance">@style/TextAppearance.AppCompat.Widget.Switch</item>
         <item name="track">@drawable/abc_switch_track_mtrl_alpha</item>
-    </style>
-    <style name="Base.Widget.AppCompat.DrawerArrowToggle" parent="@style/Base.Widget.AppCompat.DrawerArrowToggle.Common">
-        <item name="barLength">18.0dip</item>
-        <item name="drawableSize">24.0dip</item>
-        <item name="gapBetweenBars">3.0dip</item>
     </style>
     <style name="Base.Widget.AppCompat.DrawerArrowToggle.Common" parent="">
         <item name="arrowHeadLength">8.0dip</item>

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.fabianbleile.bakeryapp">
-	<uses-sdk android:minSdkVersion="15" android:targetSdkVersion="26" />
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.fabianbleile.bakeryapp">/>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
-	<application android:theme="resourceId:0x7f0c0005" android:label="resourceId:0x7f0b0020" android:icon="resourceId:0x7f0a0000" android:debuggable="true" android:testOnly="true" android:allowBackup="true" android:supportsRtl="true" android:roundIcon="resourceId:0x7f0a0001">
+	<application android:theme="resourceId:0x7f0c0005"
+        android:label="resourceId:0x7f0b0020"
+        android:icon="resourceId:0x7f0a0000"
+        android:testOnly="true"
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:roundIcon="resourceId:0x7f0a0001">
 		<activity android:name="com.fabianbleile.bakeryapp.Activity.MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
