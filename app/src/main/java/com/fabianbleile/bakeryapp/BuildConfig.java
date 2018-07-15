@@ -1,11 +1,11 @@
-package a.bakewithfun1;
+package com.fabianbleile.bakeryapp;
 
 import com.android.tools.ir.runtime.IncrementalChange;
 import com.android.tools.ir.runtime.InstantReloadException;
 
 public final class BuildConfig
 {
-  public static final String APPLICATION_ID = "a.bakewithfun1";
+  public static final String APPLICATION_ID = "com.fabianbleile.bakeryapp";
   public static final String BUILD_TYPE = "debug";
   public static final boolean DEBUG = Boolean.parseBoolean("true");
   public static final String FLAVOR = "";

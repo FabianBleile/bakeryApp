@@ -1,11 +1,11 @@
-package a.bakewithfun1.Fragment;
+package com.fabianbleile.bakeryapp.Fragment;
 
-import a.bakewithfun1.Activity.DetailActivity;
-import a.bakewithfun1.Activity.MainActivity;
-import a.bakewithfun1.Activity.StepActivity;
-import a.bakewithfun1.Adapter.MasterListAdapter;
-import a.bakewithfun1.Adapter.MasterListAdapter.MasterListAdapterOnClickHandler;
-import a.bakewithfun1.utils.JsonUtils;
+import com.fabianbleile.bakeryapp.Activity.DetailActivity;
+import com.fabianbleile.bakeryapp.Activity.MainActivity;
+import com.fabianbleile.bakeryapp.Activity.StepActivity;
+import com.fabianbleile.bakeryapp.Adapter.MasterListAdapter;
+import com.fabianbleile.bakeryapp.Adapter.MasterListAdapter.MasterListAdapterOnClickHandler;
+import com.fabianbleile.bakeryapp.utils.JsonUtils;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;

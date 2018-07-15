@@ -1,4 +1,4 @@
-package a.bakewithfun1.utils;
+package com.fabianbleile.bakeryapp.utils;
 
 import android.net.Uri;
 import android.net.Uri.Builder;

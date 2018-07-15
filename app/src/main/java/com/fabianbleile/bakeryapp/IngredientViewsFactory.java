@@ -1,6 +1,6 @@
-package a.bakewithfun1;
+package com.fabianbleile.bakeryapp;
 
-import a.bakewithfun1.Object.IngredientsObject.Ingredient;
+import com.fabianbleile.bakeryapp.Object.IngredientsObject.Ingredient;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package a.bakewithfun1;
+package com.fabianbleile.bakeryapp;
 
 public final class R
 {
@@ -816,7 +816,7 @@ public final class R
     public static final int radio = 2131165296;
     public static final int recipe_card_view = 2131165297;
     public static final int recipe_image_view = 2131165298;
-    public static final int recipe_recycler_view = 2131165299;
+    public static final int recipe_recycler_view = mRecyclerView;
     public static final int recipe_text_view = 2131165300;
     public static final int right_icon = 2131165301;
     public static final int right_side = 2131165302;

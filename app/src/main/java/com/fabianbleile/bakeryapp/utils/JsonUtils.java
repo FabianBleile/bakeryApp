@@ -1,7 +1,7 @@
-package a.bakewithfun1.utils;
+package com.fabianbleile.bakeryapp.utils;
 
-import a.bakewithfun1.Object.IngredientsObject.Ingredient;
-import a.bakewithfun1.Object.RecipeObject;
+import com.fabianbleile.bakeryapp.Object.IngredientsObject.Ingredient;
+import com.fabianbleile.bakeryapp.Object.RecipeObject;
 import android.content.Context;
 import android.util.Log;
 import com.android.tools.ir.runtime.IncrementalChange;

@@ -1,4 +1,4 @@
-package a.bakewithfun1;
+package com.fabianbleile.bakeryapp;
 
 import android.content.Intent;
 import android.widget.RemoteViewsService;

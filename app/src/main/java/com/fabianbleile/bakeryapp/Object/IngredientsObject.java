@@ -1,4 +1,4 @@
-package a.bakewithfun1.Object;
+package com.fabianbleile.bakeryapp.Object;
 
 import com.android.tools.ir.runtime.IncrementalChange;
 import com.android.tools.ir.runtime.InstantReloadException;
@@ -86,9 +86,3 @@ public class IngredientsObject
     }
   }
 }
-
-
-/* Location:              D:\Programs\dex-tools\dex2jar-2.0\split_lib_slice_7_apk-dex2jar.jar!\a\bakewithfun1\Object\IngredientsObject.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

@@ -1,12 +1,13 @@
 package com.fabianbleile.bakeryapp.Activity;
 
-import a.bakewithfun1.Object.RecipeObject;
+import com.fabianbleile.bakeryapp.Object.RecipeObject;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import com.android.tools.ir.runtime.IncrementalChange;
 import com.android.tools.ir.runtime.InstantReloadException;
+import com.fabianbleile.bakeryapp.R;
 
 public class DetailActivity
   extends AppCompatActivity
@@ -22,38 +23,20 @@ public class DetailActivity
   
   public DetailActivity() {}
   
-  DetailActivity(Object[] paramArrayOfObject, InstantReloadException paramInstantReloadException) {}
-  
   private void closeOnError(String paramString)
   {
-    IncrementalChange localIncrementalChange = $change;
-    if (localIncrementalChange != null)
-    {
-      localIncrementalChange.access$dispatch("closeOnError.(Ljava/lang/String;)V", new Object[] { this, paramString });
-      return;
-    }
     finish();
   }
   
   public static int getmId()
   {
-    IncrementalChange localIncrementalChange = $change;
-    if (localIncrementalChange != null) {
-      return ((Number)localIncrementalChange.access$dispatch("getmId.()I", new Object[0])).intValue();
-    }
     return mId;
   }
   
   public void onCreate(@Nullable Bundle paramBundle)
   {
-    IncrementalChange localIncrementalChange = $change;
-    if (localIncrementalChange != null)
-    {
-      localIncrementalChange.access$dispatch("onCreate.(Landroid/os/Bundle;)V", new Object[] { this, paramBundle });
-      return;
-    }
     super.onCreate(paramBundle);
-    setContentView(2131296283);
+    setContentView(R.layout.activity_detail);
     paramBundle = getIntent();
     if (paramBundle == null) {
       closeOnError("intent");
@@ -66,9 +49,3 @@ public class DetailActivity
     setTitle(mName);
   }
 }
-
-
-/* Location:              D:\Programs\dex-tools\dex2jar-2.0\split_lib_slice_9_apk-dex2jar.jar!\a\bakewithfun1\Activity\DetailActivity.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

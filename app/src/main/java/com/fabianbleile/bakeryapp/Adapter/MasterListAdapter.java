@@ -1,6 +1,6 @@
-package a.bakewithfun1.Adapter;
+package com.fabianbleile.bakeryapp.Adapter;
 
-import a.bakewithfun1.utils.JsonUtils;
+import com.fabianbleile.bakeryapp.utils.JsonUtils;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView.Adapter;
 import android.support.v7.widget.RecyclerView.ViewHolder;

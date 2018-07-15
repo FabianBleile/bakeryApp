@@ -1,6 +1,6 @@
-package a.bakewithfun1.Fragment;
+package com.fabianbleile.bakeryapp.Fragment;
 
-import a.bakewithfun1.utils.NetworkUtils;
+import com.fabianbleile.bakeryapp.utils.NetworkUtils;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;

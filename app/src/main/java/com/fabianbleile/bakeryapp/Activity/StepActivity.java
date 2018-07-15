@@ -1,8 +1,9 @@
 package com.fabianbleile.bakeryapp.Activity;
 
-import a.bakewithfun1.Fragment.StepFragment;
-import a.bakewithfun1.Fragment.StepFragment.OnImageClickListener;
-import a.bakewithfun1.utils.JsonUtils;
+import com.fabianbleile.bakeryapp.Fragment.StepFragment;
+import com.fabianbleile.bakeryapp.Fragment.StepFragment.OnImageClickListener;
+import com.fabianbleile.bakeryapp.R;
+import com.fabianbleile.bakeryapp.utils.JsonUtils;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -30,16 +31,8 @@ public class StepActivity
   
   public StepActivity() {}
   
-  StepActivity(Object[] paramArrayOfObject, InstantReloadException paramInstantReloadException) {}
-  
   private void parseStepObject(String[] paramArrayOfString, StepFragment paramStepFragment)
   {
-    IncrementalChange localIncrementalChange = $change;
-    if (localIncrementalChange != null)
-    {
-      localIncrementalChange.access$dispatch("parseStepObject.([Ljava/lang/String;La/bakewithfun1/Fragment/StepFragment;)V", new Object[] { this, paramArrayOfString, paramStepFragment });
-      return;
-    }
     this.mId = paramArrayOfString[0];
     this.mShortDescription = paramArrayOfString[1];
     this.mDescription = paramArrayOfString[2];
@@ -56,27 +49,21 @@ public class StepActivity
   
   public void onCreate(Bundle paramBundle)
   {
-    Object localObject = $change;
-    if (localObject != null)
-    {
-      ((IncrementalChange)localObject).access$dispatch("onCreate.(Landroid/os/Bundle;)V", new Object[] { this, paramBundle });
-      return;
-    }
     super.onCreate(paramBundle);
-    setContentView(2131296285);
-    localObject = TAG;
+    setContentView(R.layout.activity_step);
+
     StringBuilder localStringBuilder = new StringBuilder();
     localStringBuilder.append("SharedPreferences: ");
     localStringBuilder.append(MainActivity.sharedpreferences.getString("recipesStringKey", "null"));
-    Log.i((String)localObject, localStringBuilder.toString());
+    Log.i((String)TAG, localStringBuilder.toString());
     if (paramBundle == null)
     {
       paramBundle = new StepFragment();
-      localObject = getIntent();
-      this.mData = ((Intent)localObject).getStringArrayExtra("data");
+      Intent intent = getIntent();
+      this.mData = ((Intent)intent).getStringArrayExtra("data");
       this.mDataLength = this.mData.length;
-      this.mStepNumber = ((Intent)localObject).getIntExtra("adapterPosition", 0);
-      this.recipeId = ((Intent)localObject).getIntExtra("recipeId", 0);
+      this.mStepNumber = ((Intent)intent).getIntExtra("adapterPosition", 0);
+      this.recipeId = ((Intent)intent).getIntExtra("recipeId", 0);
       this.stepObject = JsonUtils.splitStepDetail(this.mData[this.mStepNumber], getBaseContext());
       parseStepObject(this.stepObject, paramBundle);
       getSupportFragmentManager().beginTransaction().add(2131165332, paramBundle).commit();
@@ -85,40 +72,22 @@ public class StepActivity
   
   public void onNextSelected(int paramInt)
   {
-    Object localObject = $change;
-    if (localObject != null)
-    {
-      ((IncrementalChange)localObject).access$dispatch("onNextSelected.(I)V", new Object[] { this, new Integer(paramInt) });
-      return;
-    }
-    localObject = new StepFragment();
+    Fragment fragment = new StepFragment();
     this.stepObject = JsonUtils.splitStepDetail(this.mData[paramInt], getBaseContext());
-    parseStepObject(this.stepObject, (StepFragment)localObject);
-    getSupportFragmentManager().beginTransaction().replace(2131165332, (Fragment)localObject).commit();
+    parseStepObject(this.stepObject, (StepFragment)fragment);
+    getSupportFragmentManager().beginTransaction().replace(2131165332, (Fragment)fragment).commit();
   }
   
   public void onPreviousSelected(int paramInt)
   {
-    Object localObject = $change;
-    if (localObject != null)
-    {
-      ((IncrementalChange)localObject).access$dispatch("onPreviousSelected.(I)V", new Object[] { this, new Integer(paramInt) });
-      return;
-    }
     if (paramInt == -1)
     {
       finish();
       return;
     }
-    localObject = new StepFragment();
+    Fragment fragment = new StepFragment();
     this.stepObject = JsonUtils.splitStepDetail(this.mData[paramInt], getBaseContext());
-    parseStepObject(this.stepObject, (StepFragment)localObject);
-    getSupportFragmentManager().beginTransaction().replace(2131165332, (Fragment)localObject).commit();
+    parseStepObject(this.stepObject, (StepFragment)fragment);
+    getSupportFragmentManager().beginTransaction().replace(2131165332, (Fragment)fragment).commit();
   }
 }
-
-
-/* Location:              D:\Programs\dex-tools\dex2jar-2.0\split_lib_slice_9_apk-dex2jar.jar!\a\bakewithfun1\Activity\StepActivity.class
- * Java compiler version: 6 (50.0)
- * JD-Core Version:       0.7.1
- */

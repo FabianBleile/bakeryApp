@@ -1,7 +1,7 @@
-package a.bakewithfun1;
+package com.fabianbleile.bakeryapp;
 
-import a.bakewithfun1.Activity.MainActivity;
-import a.bakewithfun1.Object.IngredientsObject.Ingredient;
+import com.fabianbleile.bakeryapp.Activity.MainActivity;
+import com.fabianbleile.bakeryapp.Object.IngredientsObject.Ingredient;
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
@@ -23,7 +23,7 @@ public class IngredientsWidget
   extends AppWidgetProvider
 {
   private static final int DEFAULT_RECIPEID = 0;
-  public static String EXTRA_INGREDIENT = "a.bakewithfun1.widget.INGREDIENT";
+  public static String EXTRA_INGREDIENT = "com.fabianbleile.bakeryapp.widget.INGREDIENT";
   private static String ingredientsListserializedJson;
   public static List<IngredientsObject.Ingredient> mAllIngredientList = new ArrayList();
   public static List<IngredientsObject.Ingredient> mCurrentRecipeIngredients = new ArrayList();

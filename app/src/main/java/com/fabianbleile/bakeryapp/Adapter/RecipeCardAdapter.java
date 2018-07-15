@@ -1,6 +1,6 @@
-package a.bakewithfun1.Adapter;
+package com.fabianbleile.bakeryapp.Adapter;
 
-import a.bakewithfun1.Object.RecipeObject;
+import com.fabianbleile.bakeryapp.Object.RecipeObject;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView.Adapter;
 import android.support.v7.widget.RecyclerView.ViewHolder;
